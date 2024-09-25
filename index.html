@@ -10,7 +10,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -91,26 +91,25 @@
           </button>
         </form>
       </div>
-
-      <!-- success container -->
-      <div class="success-container hide">
-        <div class="success-content">
-          <img
-            src="assets/images/icon-success.svg"
-            alt="big white tick with orange round background"
-            class="success-icon"
-          />
-          <h2 class="success-title">Thanks for Subscribing!</h2>
-          <p class="success-subtitle">
-            A confirmation email has been sent to
-            <span class="success-email">ash@loremcompany.com</span>. Please open
-            it and click the button inside to confirm your subscription.
-          </p>
-        </div>
-        <button type="button" class="newsletter__form-button success-button">
-          Dismiss message
-        </button>
-      </div>
     </main>
+    <!-- success container -->
+    <div class="success-container hide">
+      <div class="success-content">
+        <img
+          src="assets/images/icon-success.svg"
+          alt="big white tick with orange round background"
+          class="success-icon"
+        />
+        <h2 class="success-title">Thanks for Subscribing!</h2>
+        <p class="success-subtitle">
+          A confirmation email has been sent to
+          <span class="success-email">ash@loremcompany.com</span>. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button type="button" class="newsletter__form-button success-button">
+        Dismiss message
+      </button>
+    </div>
   </body>
 </html>
