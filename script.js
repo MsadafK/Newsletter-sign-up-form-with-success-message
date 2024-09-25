@@ -12,6 +12,7 @@ let flag = false;
 // Form submission event listener
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+  console.log("hello from inside");
 
   let isValid = true;
 
@@ -45,7 +46,7 @@ dismissButton.addEventListener("click", function () {
 function showOrRemoveError(element, message) {
   const parent =
     element.closest(".newsletter__form-group") || element.parentElement;
-  const errorSpan = parent.querySelector("span[id$='-error]");
+  const errorSpan = parent.querySelector("#email-error");
 
   if (message) {
     errorSpan.textContent = message;
