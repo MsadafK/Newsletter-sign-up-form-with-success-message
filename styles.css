@@ -25,9 +25,9 @@ body {
   margin: 0;
 }
 .error-message {
-  color: var(--red);
+  color: var(--tomato);
   font-size: 0.8rem;
-  margin-top: 0.125rem;
+  margin-top: -1rem;
   padding: 0.25rem;
   display: block;
 }
@@ -148,7 +148,6 @@ body {
 .hide {
   display: none;
 }
-
 /* MEDIA QUERIES */
 /* 375px and more */
 @media (min-width: 375px) {
@@ -197,6 +196,7 @@ body {
   body {
     background-color: var(--charcoal-grey);
   }
+
   .newsletter {
     display: flex;
     align-items: center;
@@ -205,6 +205,9 @@ body {
     max-width: 768px;
     margin: 0 auto;
     background-color: var(--white);
+  }
+  .hide {
+    display: none;
   }
   .success-container {
     background-color: var(--white);
